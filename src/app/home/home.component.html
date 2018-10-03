@@ -1,0 +1,23 @@
+<div class="container">
+  <div flex fxLayout="row">
+    <div fxFlex="50">
+      <h1 class="mat-display-3">
+        Welcome to {{ title }}!
+      </h1>
+    </div>
+    <div fxFlex="50">
+      <img width="300" alt="Angular Logo" src="assets/gdgaccra.png">
+    </div>
+  </div>
+  <!-- Info section -->
+  <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px grid" fxLayoutAlign="space-evenly stretch" class="info">
+    <div fxFlex="25" *ngFor="let item of main">
+      <mat-card class=".mat-elevation-z0">
+        <mat-card-title>{{ item.title }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ item.content }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

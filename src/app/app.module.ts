@@ -8,9 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -18,7 +20,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     LayoutModule,
     AppMaterialModule,
     FlexLayoutModule,
-    MatIconModule
+    MatIconModule,
+    AppRoutingModule
   ],
   providers: [MatIconRegistry],
   bootstrap: [AppComponent]
