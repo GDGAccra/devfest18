@@ -24,4 +24,21 @@
     </div>
   </div>
   <!-- Info section -->
+
+  <!-- speaker section -->
+  <div class="speaker">
+    <h2>Rockstar Speakers</h2>
+    <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+      <div fxFlex="25" *ngFor="let speaker of speakers">
+        <mat-card class=".mat-elevation-z0">
+          <img class="rounded-circle" mat-card-image src="assets/speaker.png">
+          <h2 class="mat-headline">{{ speaker.name }}</h2>
+          <p class="mat-subheading-1">{{ speaker.name }}</p>
+        </mat-card>
+      </div>
+    </div>
+    <a mat-stroked-button routerLink="/speakers">View All Speakers</a>
+  </div>
+  <!-- speaker section -->
+
 </div>
