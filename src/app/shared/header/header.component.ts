@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  title = 'Devfest Accra';
+  links = [
+    { name: 'home', target: '#' },
+    { name: 'speakers', target: '#' },
+    { name: 'schedule', target: '#' },
+    { name: 'team', target: '#' }
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

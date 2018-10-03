@@ -1,3 +1,7 @@
-<p>
-  header works!
-</p>
+<mat-toolbar>
+  <span>{{title}}</span>
+  <!-- TODO: Link to each page -->
+  <span class="pull-right"></span>
+  <a *ngFor="let link of links" mat-button routerLink=".">{{link.name}}</a>
+  <a mat-flat-button>Get a ticket</a>
+</mat-toolbar>
