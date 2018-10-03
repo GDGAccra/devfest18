@@ -3,7 +3,8 @@ import {
   MatListModule,
   MatIconModule,
   MatButtonModule,
-  MatCardModule
+  MatCardModule,
+  MatDividerModule
 } from '@angular/material';
 import { NgModule } from '@angular/core';
 
@@ -13,7 +14,8 @@ import { NgModule } from '@angular/core';
     MatListModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule
   ]
 })
 export class AppMaterialModule {}

@@ -1,3 +1,4 @@
+import { MatIconModule, MatIconRegistry } from '@angular/material';
 import { AppMaterialModule } from './app-material/app-material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,9 +17,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     SharedModule,
     LayoutModule,
     AppMaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatIconModule
   ],
-  providers: [],
+  providers: [MatIconRegistry],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(public matIconRegistry: MatIconRegistry) {
+    matIconRegistry.registerFontClassAlias('fontawesome', 'fa');
+  }
+}
