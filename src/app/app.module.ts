@@ -12,9 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { SpeakersComponent } from './speakers/speakers.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, TeamComponent, ScheduleComponent],
+  declarations: [AppComponent, HomeComponent, TeamComponent, ScheduleComponent, SpeakersComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
