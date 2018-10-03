@@ -11,9 +11,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, TeamComponent],
+  declarations: [AppComponent, HomeComponent, TeamComponent, ScheduleComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
