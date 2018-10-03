@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   title = 'Devfest Accra';
   links = [
-    { name: 'home', target: '#' },
-    { name: 'speakers', target: '#' },
-    { name: 'schedule', target: '#' },
-    { name: 'team', target: '#' }
+    { name: 'home', target: '/' },
+    { name: 'speakers', target: '/speakers' },
+    { name: 'schedule', target: '/schedule' },
+    { name: 'team', target: '/team' }
   ];
 
   constructor() {}

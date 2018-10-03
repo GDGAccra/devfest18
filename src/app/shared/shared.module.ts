@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './../app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppMaterialModule } from './../app-material/app-material.module';
 import { NgModule } from '@angular/core';
@@ -6,7 +7,12 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  imports: [CommonModule, AppMaterialModule, FlexLayoutModule],
+  imports: [
+    CommonModule,
+    AppMaterialModule,
+    FlexLayoutModule,
+    AppRoutingModule
+  ],
   declarations: [HeaderComponent, FooterComponent],
   exports: [HeaderComponent, FooterComponent]
 })
