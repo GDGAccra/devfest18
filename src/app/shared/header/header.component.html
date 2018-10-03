@@ -1,8 +1,8 @@
 <mat-toolbar>
   <div class="container">
     <span>{{title}}</span>
-    <span class="pull-right"></span>
-    <a *ngFor="let link of links" mat-button routerLink="{{link.target}}">{{link.name}}</a>
+    <a *ngFor="let link of links" mat-button routerLink="{{link.target}}" routerLinkActive="mat-primary"
+      [routerLinkActiveOptions]="{exact: true}">{{link.name}}</a>
     <a mat-flat-button class="pull-right">Get a ticket</a>
   </div>
 </mat-toolbar>
