@@ -30,10 +30,10 @@ export class HomeComponent implements OnInit {
 
   // TODO: Get only random 4 speakers
   speakers = [
-    { name: 'Speaker Name', Company: 'Company Name' },
-    { name: 'Speaker Name', Company: 'Company Name' },
-    { name: 'Speaker Name', Company: 'Company Name' },
-    { name: 'Speaker Name', Company: 'Company Name' }
+    { name: 'Speaker Name', company: 'Company Name' },
+    { name: 'Speaker Name', company: 'Company Name' },
+    { name: 'Speaker Name', company: 'Company Name' },
+    { name: 'Speaker Name', company: 'Company Name' }
   ];
 
   ngOnInit() {}

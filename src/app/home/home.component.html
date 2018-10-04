@@ -1,13 +1,24 @@
 <div class="container">
+
   <!-- Welcome section -->
-  <div flex fxLayout="row" fxLayout.xs="column">
-    <div fxFlex="50">
-      <h1 class="mat-display-3">
-        Welcome to {{ title }}!
-      </h1>
-    </div>
-    <div fxFlex="50">
-      <img width="300" alt="Angular Logo" src="assets/gdgaccra.png">
+  <div class="welcome">
+    <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px grid" fxLayoutAlign="space-around center">
+      <div fxFlex="50" fxLayout="column">
+        <h1 class="mat-display-3">
+          Welcome to {{ title }}!
+        </h1>
+        <h2>GDG #DevFest18</h2>
+        <p class="mat-subheading-2">GDG Accra is pleased to announce #DevFest18. Its that season that brings together
+          developers from all walks
+          of life, giving them a chance to showcase what they have been up to this year. Its that season, where the
+          community comes alive. This year is no different.
+        </p>
+      </div>
+      <div fxFlex="50" fxLayoutAlign="center">
+        <mat-card flex fxLayout="row" class=".mat-elevation-z0 welcome-card">
+          <img alt="GDG ACCRA" src="assets/gdgaccra.png" class="welcome-card-image">
+        </mat-card>
+      </div>
     </div>
   </div>
   <!-- Welcome section -->
@@ -33,7 +44,7 @@
         <mat-card class=".mat-elevation-z0">
           <img class="rounded-circle" mat-card-image src="assets/speaker.png">
           <h2 class="mat-headline">{{ speaker.name }}</h2>
-          <p class="mat-subheading-1">{{ speaker.name }}</p>
+          <p class="mat-subheading-1">{{ speaker.company }}</p>
         </mat-card>
       </div>
     </div>
