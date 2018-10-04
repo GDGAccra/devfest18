@@ -1,8 +1,21 @@
 <mat-toolbar>
   <div class="container">
-    <span>{{title}}</span>
-    <a *ngFor="let link of links" mat-button routerLink="{{link.target}}" routerLinkActive="mat-primary"
-      [routerLinkActiveOptions]="{exact: true}">{{link.name}}</a>
-    <a mat-flat-button class="pull-right">Get a ticket</a>
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button [matMenuTriggerFor]="appMenu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #appMenu="matMenu" class="panel">
+        <a *ngFor="let link of links" mat-menu-item routerLink="{{link.target}}" routerLinkActive="mat-primary"
+          [routerLinkActiveOptions]="{exact: true}">{{link.name}}</a>
+        <a mat-menu-item class="pull-right">Get a ticket</a>
+      </mat-menu>
+      <span class="pull-right">{{title}}</span>
+    </div>
+    <div fxShow="true" fxHide.lt-md="true">
+      <span>{{title}}</span>
+      <a *ngFor="let link of links" mat-button routerLink="{{link.target}}" routerLinkActive="mat-primary"
+        [routerLinkActiveOptions]="{exact: true}">{{link.name}}</a>
+      <a mat-flat-button class="pull-right">Get a ticket</a>
+    </div>
   </div>
 </mat-toolbar>
