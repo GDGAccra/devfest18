@@ -11,20 +11,28 @@ export class HomeComponent implements OnInit {
   title = 'devfest18';
 
   main = [
-    { title: 'sessions', content: 'Android, Web and Cloud technologies' },
     {
-      title: 'showcases',
-      content:
-        'Demo zone with the latest of Google tech: Big Data, face recognition, VR, IoT - all in one place'
+      title: 'Sessions',
+      content: 'Android, Web and Cloud technologies',
+      icon: 'microphone'
     },
     {
-      title: 'workshops',
+      title: 'Showcases',
       content:
-        'Workshops to get your hands dirty and create a working prototype right during the conference'
+        'Demo zone with the latest of Google tech: Big Data, face recognition, VR, IoT - all in one place',
+      icon: 'lightbulb-o'
     },
     {
-      title: 'networking',
-      content: 'Work hard and enjoy DevFest is the best place to meet new peopl'
+      title: 'Workshops',
+      content:
+        'Workshops to get your hands dirty and create a working prototype right during the conference',
+      icon: 'users'
+    },
+    {
+      title: 'Networking',
+      content:
+        'Work hard and enjoy DevFest is the best place to meet new people',
+      icon: 'american-sign-language-interpreting'
     }
   ];
 
@@ -36,5 +44,40 @@ export class HomeComponent implements OnInit {
     { name: 'Speaker Name', company: 'Company Name' }
   ];
 
+  // TODO: Get sessions
+  sessions = [
+    {
+      title: 'Some session title',
+      description:
+        'session description session description session description session description session description',
+      speaker: 'First Last'
+    },
+    {
+      title: 'Some session title',
+      description:
+        'session description session description session description session description session description',
+      speaker: 'First Last'
+    },
+    {
+      title: 'Some session title',
+      description:
+        'session description session description session description session description session description',
+      speaker: 'First Last'
+    },
+    {
+      title: 'Some session title',
+      description:
+        'session description session description session description session description session description',
+      speaker: 'First Last'
+    }
+  ];
+
+  // TODO: Sponsors
+  sponsors = [
+    { name: 'GDG', image: 'gdg.png' },
+    { name: 'GDG', image: 'gdg.png' },
+    { name: 'GDG', image: 'gdg.png' },
+    { name: 'GDG', image: 'gdg.png' }
+  ];
   ngOnInit() {}
 }
