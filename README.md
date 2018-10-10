@@ -2,8 +2,26 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
+## Setup
+
+- Clone this repo
+
+- Install Angular CLI:
+
+  `npm install -g @angular/cli`
+
+- Install Yarn:
+
+  `npm install -g yarn`
+
 ## Development server
-Run `npm install -g @angular/cli`  and change directory into the working directory `DevFest18`
+
+Change directory into the working directory `devfest18`.
+
+`cd devfest18`
+
+Install dependencies with `yarn install`.
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
