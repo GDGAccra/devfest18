@@ -1,0 +1,11 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/firebase', '.']
+- name: 'gcr.io/cloud-builders/yarn'
+  args: ['install']
+- name: 'gcr.io/$PROJECT_ID/firebase'
+  args: ['/usr/local/bin/ng', 'build', '--prod']
+- name: 'gcr.io/$PROJECT_ID/firebase'
+  args: ['/usr/local/bin/firebase', 'deploy', '--token', '${_FIREBASE_TOKEN}']
+images:
+- 'gcr.io/$PROJECT_ID/firebase'
