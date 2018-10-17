@@ -75,6 +75,7 @@ export class HomeComponent implements OnInit {
   // TODO: Sponsors
   sponsors = [
     { name: 'GDG', image: 'gdg.png' },
+    { name: 'Impact Hub', image: 'impact-hub.png' },
     { name: 'GDG', image: 'gdg.png' },
     { name: 'GDG', image: 'gdg.png' },
     { name: 'GDG', image: 'gdg.png' }
