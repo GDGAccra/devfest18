@@ -1,5 +1,31 @@
 <div class="container">
-  <p>
-    team works!
-  </p>
+
+  <div *ngIf="(team$ | async) as team; else noTeam">
+    <h1 class="mat-display-1">Team</h1>
+    <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+      <div fxFlex="25" *ngFor="let member of team">
+        <mat-card>
+          <img class="rounded-circle" mat-card-image src="{{ member.photoUrl }}" onError="this.src='assets/speaker.png'">
+          <h2 class="mat-headline">{{ member.name }}</h2>
+          <div class="social">
+            <a *ngIf="member.socials.twitter" target="_blank" href="{{ member.socials.twitter }}">
+              <mat-icon fontSet="fa" fontIcon="fa-twitter" class="fa-2x"></mat-icon>
+            </a>
+            <a *ngIf="member.socials.linkedin" target="_blank" href="{{ member.socials.linkedin }}">
+              <mat-icon fontSet="fa" fontIcon="fa-linkedin" class="fa-2x"></mat-icon>
+            </a>
+            <a *ngIf="member.socials.facebook" target="_blank" href="{{ member.socials.facebook }}">
+              <mat-icon fontSet="fa" fontIcon="fa-facebook" class="fa-2x"></mat-icon>
+            </a>
+            <a *ngIf="member.socials.personal" target="_blank" href="{{ member.socials.personal }}">
+              <mat-icon fontSet="fa" fontIcon="fa-globe" class="fa-2x"></mat-icon>
+            </a>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+    <ng-template #noTeam>
+      <p>Team to be announced</p>
+    </ng-template>
+  </div>
 </div>
