@@ -1,6 +1,6 @@
 <div class="container">
 
-  <div *ngIf="(team$ | async) as team; else noTeam">
+  <div *ngIf="(team$ | async) as team">
     <h1 class="mat-display-1">Team</h1>
     <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
       <div fxFlex="25" *ngFor="let member of team">
@@ -24,8 +24,5 @@
         </mat-card>
       </div>
     </div>
-    <ng-template #noTeam>
-      <p>Team to be announced</p>
-    </ng-template>
   </div>
 </div>
