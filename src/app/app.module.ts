@@ -1,7 +1,11 @@
+import { environment } from './../environments/environment';
 import { MatIconModule, MatIconRegistry } from '@angular/material';
 import { AppMaterialModule } from './app-material/app-material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,7 +19,13 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, TeamComponent, ScheduleComponent, SpeakersComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    TeamComponent,
+    ScheduleComponent,
+    SpeakersComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -24,7 +34,9 @@ import { SpeakersComponent } from './speakers/speakers.component';
     AppMaterialModule,
     FlexLayoutModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [MatIconRegistry],
   bootstrap: [AppComponent]
