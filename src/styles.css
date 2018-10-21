@@ -4,9 +4,43 @@ html,
 body {
   height: 100%;
 }
+
+@font-face {
+  font-family: "Google Sans";
+  font-style: normal;
+  src: url(assets/fonts/GoogleSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url(assets/fonts/GoogleSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(assets/fonts/GoogleSans-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(assets/fonts/GoogleSans-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(assets/fonts/GoogleSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(assets/fonts/GoogleSans-MediumItalic.ttf) format("truetype");
+}
+
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Google Sans", sans-serif;
 }
 .container {
   width: 100%;
