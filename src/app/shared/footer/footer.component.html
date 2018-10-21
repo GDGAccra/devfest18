@@ -1,9 +1,15 @@
 <div class="container">
-  <div>
+  <div class="social">
     Follow us
-    <mat-icon fontSet="fa" fontIcon="fa-twitter"></mat-icon>
-    <mat-icon fontSet="fa" fontIcon="fa-google-plus"></mat-icon>
-    <mat-icon fontSet="fa" fontIcon="fa-facebook"></mat-icon>
+    <a target="_blank" href="https://twitter.com/GDGAccra">
+      <mat-icon fontSet="fa" fontIcon="fa-twitter"></mat-icon>
+    </a>
+    <a target="_blank" href="https://www.meetup.com/GDG-Accra/">
+      <mat-icon fontSet="fa" fontIcon="fa-meetup"></mat-icon>
+    </a>
+    <a target="_blank" href="https://facebook.com/gdgaccra/">
+      <mat-icon fontSet="fa" fontIcon="fa-facebook"></mat-icon>
+    </a>
   </div>
   <mat-divider></mat-divider>
   <div flex fxLayout="row" fxLayout.xs="column">
@@ -11,9 +17,9 @@
       <mat-card class=".mat-elevation-z0">
         <mat-card-title>About</mat-card-title>
         <mat-card-content>
-          <mat-list-item>GDG Accra</mat-list-item>
-          <mat-list-item>Google Developers' Group</mat-list-item>
-          <mat-list-item>Meet the team</mat-list-item>
+          <mat-list-item><a href="https://www.meetup.com/GDG-Accra/">GDG Accra</a></mat-list-item>
+          <mat-list-item><a href="https://developers.google.com/programs/community/gdg/">Google Developers' Group</a></mat-list-item>
+          <mat-list-item><a routerLink="/team">Meet the team</a></mat-list-item>
         </mat-card-content>
       </mat-card>
     </div>
@@ -21,8 +27,8 @@
       <mat-card class=".mat-elevation-z0">
         <mat-card-title>Event Resources</mat-card-title>
         <mat-card-content>
-          <mat-list-item>Call for papers</mat-list-item>
-          <mat-list-item>FAQs</mat-list-item>
+          <mat-list-item><a href="https://goo.gl/forms/d5j2QWfkQKZ67tWH3">Call for papers</a></mat-list-item>
+          <mat-list-item><a href="#">FAQs</a></mat-list-item>
         </mat-card-content>
       </mat-card>
     </div>

@@ -15,7 +15,9 @@
       <span>{{title}}</span>
       <a *ngFor="let link of links" mat-button routerLink="{{link.target}}" routerLinkActive="mat-primary"
         [routerLinkActiveOptions]="{exact: true}">{{link.name}}</a>
-      <a mat-flat-button class="pull-right">Get a ticket</a>
+      <a mat-flat-button class="pull-right" target="_blank" href="https://egotickets.com/events/gdg-accra-devfest-2018">
+        Get a ticket
+      </a>
     </div>
   </div>
 </mat-toolbar>
