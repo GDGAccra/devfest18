@@ -1,8 +1,8 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import {
   AngularFirestoreDocument,
   AngularFirestore
-} from "@angular/fire/firestore";
+} from '@angular/fire/firestore';
 
 export interface Speaker {
   id: string;
@@ -47,22 +47,22 @@ export interface Session {
 }
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 export class AppService {
   constructor(private afs: AngularFirestore) {}
 
   getSpeakers() {
-    const speakersCollection = this.afs.collection<Speaker>("speakers");
+    const speakersCollection = this.afs.collection<Speaker>('speakers');
     return speakersCollection.valueChanges();
   }
   getSponsors() {
-    const sponsorsCollection = this.afs.collection<Sponsor>("sponsors");
+    const sponsorsCollection = this.afs.collection<Sponsor>('sponsors');
     return sponsorsCollection.valueChanges();
   }
 
   getTeam() {
-    const teamCollection = this.afs.collection<Team>("team");
+    const teamCollection = this.afs.collection<Team>('team');
     return teamCollection.valueChanges();
   }
 }
