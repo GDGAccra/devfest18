@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
     { name: 'GDG', image: 'gdg.png' },
     { name: 'Impact Hub', image: 'impact-hub.png' },
     { name: 'GDG Accra', image: 'gdgaccra.png' },
-    { name: 'GDG', image: 'gdg.png' },
+    { name: 'KhoPhi Photography', image: 'khophi.jpg' },
     { name: 'GDG', image: 'gdg.png' }
   ];
   ngOnInit() {}
