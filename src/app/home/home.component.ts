@@ -76,9 +76,9 @@ export class HomeComponent implements OnInit {
   sponsors = [
     { name: 'GDG', image: 'gdg.png' },
     { name: 'Impact Hub', image: 'impact-hub.png' },
+    { name: 'Google Developers', image: 'google-developers.png' },
     { name: 'GDG Accra', image: 'gdgaccra.png' },
-    { name: 'KhoPhi Photography', image: 'khophi.jpg' },
-    { name: 'GDG', image: 'gdg.png' }
+    { name: 'KhoPhi Photography', image: 'khophi.jpg' }
   ];
   ngOnInit() {}
 }
