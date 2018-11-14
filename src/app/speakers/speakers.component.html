@@ -1,42 +1,47 @@
 <div class="container">
-
-  <div class="speaker">
-    <!-- Renable after call for speakers
-    <div *ngIf="(speakers$ | async) as speakers; else noSpeakers">
-      <h1 class="mat-display-1">Rockstar Speakers</h1>
-      <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
-        <div fxFlex="25" *ngFor="let speaker of speakers">
+  <div class="speakers-container">
+    <div *ngIf="(speakers$ | async) as speakers">
+      <h1 class="mat-display-1">Our Speakers</h1>
+      <div flex fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="10px">
+        <div fxFlex="30" *ngFor="let speaker of speakers" class="speaker">
           <mat-card>
-            <img class="rounded-circle" mat-card-image src="assets/speaker.png">
-            <h2 class="mat-headline">{{ speaker.name }}</h2>
-            <p class="mat-subheading-1">{{ speaker.company }}</p>
-            <p class="mat-body-1">{{ speaker.bio }}</p>
+            <img
+              class="rounded-circle"
+              mat-card-image
+              src="{{speaker.photoUrl}}"
+            />
+            <!-- TODO: Link to speaker's session -->
+            <h2 class="mat-title">{{ speaker.name }}</h2>
+            <!-- <p class="mat-caption">{{ speaker.bio }}</p> -->
           </mat-card>
         </div>
       </div>
-      <ng-template #noSpeakers>
-        <p>No speakers</p>
-        <h1 class="mat-display-1">No speakers yet. Fill out the the call for speakers</h1>
-        <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
-          <mat-card class=".mat-elevation-z0">
-            <img class="rounded-circle" mat-card-image src="assets/devfest.png">
-          </mat-card>
-        </div>
-        <a mat-stroked-button routerLink="/speakers">Call for speakers</a>
-      </ng-template>
-    </div> 
-    -->
+    </div>
 
     <!-- Temp for no speakers -->
-    <h1 class="mat-display-1">No speakers yet. Fill out the the call for speakers</h1>
-    <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="center">
-      <mat-card class=".mat-elevation-z0">
-        <img class="rounded-circle" mat-card-image src="assets/devfest.png">
-      </mat-card>
-    </div>
-    <a mat-stroked-button target="_blank" href="https://goo.gl/forms/Uc4ZOhH8Sr6Jvubm2">
-      <h1>
-        Call for speakers
+    <!--
+      <h1 class="mat-display-1">
+        No speakers yet. Fill out the the call for speakers
       </h1>
-    </a>
+      <div
+        flex
+        fxLayout="row"
+        fxLayout.xs="column"
+        fxLayoutGap="10px"
+        fxLayoutAlign="center"
+      >
+        <mat-card class=".mat-elevation-z0">
+          <img class="rounded-circle" mat-card-image src="assets/devfest.png" />
+        </mat-card>
+      </div>
+      <a
+        mat-stroked-button
+        target="_blank"
+        href="https://goo.gl/forms/Uc4ZOhH8Sr6Jvubm2"
+      >
+        <h1>Call for speakers</h1>
+      </a>
+    -->
+    <!-- Temp for no speakers -->
   </div>
+</div>
