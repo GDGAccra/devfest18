@@ -1,4 +1,6 @@
+import { AppService } from './../app.service';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  speakers$: Observable<any[]>;
+  constructor(private appservice: AppService) {}
 
   title = 'devfest18';
 
@@ -37,12 +40,12 @@ export class HomeComponent implements OnInit {
   ];
 
   // TODO: Get only random 4 speakers
-  speakers = [
-    { name: 'Speaker Name', company: 'Company Name' },
-    { name: 'Speaker Name', company: 'Company Name' },
-    { name: 'Speaker Name', company: 'Company Name' },
-    { name: 'Speaker Name', company: 'Company Name' }
-  ];
+  // speakers = [
+  //   { name: 'Speaker Name', company: 'Company Name' },
+  //   { name: 'Speaker Name', company: 'Company Name' },
+  //   { name: 'Speaker Name', company: 'Company Name' },
+  //   { name: 'Speaker Name', company: 'Company Name' }
+  // ];
 
   // TODO: Get sessions
   sessions = [
@@ -81,5 +84,7 @@ export class HomeComponent implements OnInit {
     { name: 'KhoPhi Photography', image: 'khophi.jpg' },
     { name: 'Nakrotek', image: 'nakrotek.png' }
   ];
-  ngOnInit() {}
+  ngOnInit() {
+    this.speakers$ = this.appservice.getSpeakers();
+  }
 }
