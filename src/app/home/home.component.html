@@ -76,7 +76,7 @@
 
   <!-- speaker section -->
   <div class="speaker">
-    <h1 class="mat-display-1">Rockstar Speakers</h1>
+    <h1 class="mat-display-1">Our speakers</h1>
     <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
       <div *ngIf="(speakers$ | async) as speakers">
         <div fxFlex="25" *ngFor="let speaker of (speakers | slice: 0:4)">
