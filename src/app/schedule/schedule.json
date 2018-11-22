@@ -1,5 +1,20 @@
 [
   {
+    "from": "09:00",
+    "to": "10:00",
+    "talks": [
+      { "title": "Registration", "speaker": "Volunteers" },
+      { "title": "Networking" }
+    ]
+  },
+  {
+    "from": "10:00",
+    "to": "10:30",
+    "talks": [
+      { "title": "Welcome & Introductions", "speaker": "John/Jeff/Kafui" }
+    ]
+  },
+  {
     "from": "10:30",
     "to": "11:00",
     "talks": [
@@ -83,7 +98,7 @@
   },
   {
     "from": "14:50",
-    "to ": "13:00",
+    "to": "15:00",
     "talks": [
       {
         "speaker": "Evans Augustt",
@@ -91,6 +106,13 @@
         "summary": "Two years ago, i stumbled upon sonic pi (A live music programing platform). I'd like to entertain your audience with African beats/music generated from live ruby codes. It will take 5-15mins.",
         "title": "Live coding African beats with Sonic pi"
       }
+    ]
+  },
+  {
+    "from": "15:00",
+    "to": "15:10",
+    "talks": [
+      { "title": "Closing Remarks, feedback and finger food if any remains" }
     ]
   }
 ]
