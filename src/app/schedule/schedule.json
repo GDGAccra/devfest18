@@ -11,7 +11,7 @@
     "from": "10:00",
     "to": "10:30",
     "talks": [
-      { "title": "Welcome & Introductions", "speaker": "John/Jeff/Kafui" }
+      { "title": "Welcome & Introductions", "speaker": "Nadia/Jeff/Kafui" }
     ]
   },
   {
@@ -77,7 +77,7 @@
     "to": "14:45",
     "talks": [
       {
-        "speaker": "Kwadwo Agyapong Ntara",
+        "speaker": "Kwadwo Agyapon-Ntra",
         "speakerNumber": "10",
         "summary": "Machine Learning is a hot topic for discussion these days, and rightly so: it has endless prospects, and is greatly accelerating the growth of the technology industry. I recently begun a journey into the world of machine learning, starting with the Stanford course on Coursera, moving on to implement the Firebase Machine Learning Kit in Android, and finally experimenting with Google's TensorFlow. This talk is a compression of my journey, and a guide for beginners to fast-track their progress in Machine Learning using TensorFlow.",
         "title": "Up and Running with TensorFlow (A Beginner's Guide)"
