@@ -17,6 +17,8 @@ import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { SpeakersComponent } from './speakers/speakers.component';
+import { TalkDialogComponent } from './talk-dialog/talk-dialog.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,9 +38,10 @@ import { SpeakersComponent } from './speakers/speakers.component';
     MatIconModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    HttpClientModule
   ],
-  providers: [MatIconRegistry],
+  providers: [MatIconRegistry, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {

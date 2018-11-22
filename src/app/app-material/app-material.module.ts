@@ -5,8 +5,9 @@ import {
   MatButtonModule,
   MatCardModule,
   MatDividerModule,
-  MatSidenavModule,
-  MatMenuModule
+  MatMenuModule,
+  MatTableModule,
+  MatDialogModule
 } from '@angular/material';
 import { NgModule } from '@angular/core';
 
@@ -18,7 +19,9 @@ import { NgModule } from '@angular/core';
     MatButtonModule,
     MatCardModule,
     MatDividerModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatDialogModule
   ]
 })
 export class AppMaterialModule {}

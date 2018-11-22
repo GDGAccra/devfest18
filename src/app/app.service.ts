@@ -44,6 +44,13 @@ export interface Session {
   description: string;
   image: string;
   title: string;
+  talks: Talk[];
+}
+
+export interface Talk {
+  title: string;
+  speaker: Speaker;
+  summary: string;
 }
 
 @Injectable({
@@ -64,5 +71,15 @@ export class AppService {
   getTeam() {
     const teamCollection = this.afs.collection<Team>('team');
     return teamCollection.valueChanges();
+  }
+
+  getSessions() {
+    const sessionsCollection = this.afs.collection<Session>('sessions');
+    return sessionsCollection.valueChanges();
+  }
+
+  getTalks() {
+    const talksCollection = this.afs.collection<Talk>('talks');
+    return talksCollection.valueChanges();
   }
 }

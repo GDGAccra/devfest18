@@ -1,15 +1,64 @@
 <div class="container">
-  <div class="schedule">
-    <h1 class="mat-display-1">Check back later</h1>
-    <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="center">
-      <mat-card class=".mat-elevation-z0">
-        <img class="rounded-circle" mat-card-image src="assets/devfest.png">
-      </mat-card>
-    </div>
-    <a mat-stroked-button target="_blank" href="https://goo.gl/forms/Uc4ZOhH8Sr6Jvubm2">
-      <h1>
-        Call for speakers
-      </h1>
-    </a>
+  <div class="schedule mb">
+    <h1 class="mat-display-1">Schedule</h1>
+
+    <mat-card *ngFor="let session of sessions" class="mat-elevation-z24">
+      <mat-card-content>
+        <div
+          flex
+          fxLayout="row"
+          fxLayout.xs="column"
+          fxLayoutGap="10px"
+          fxLayoutAlign="center"
+        >
+          <mat-card fxFlex="10" class="mat-elevation-z0">
+            <mat-card-title>
+              {{ session.from }} <br />
+              to <br />
+              {{ session.to }}
+            </mat-card-title>
+          </mat-card>
+          <mat-card
+            fxFlex="90"
+            *ngFor="let talk of session.talks"
+            class="mat-elevation-z0 talk"
+          >
+            <mat-card-title (click)="openTalkDialog(talk)" class="talk-title">
+              {{ talk.title }}
+              <button mat-icon-button>
+                <mat-icon aria-label="More talk details">
+                  chevron_right
+                </mat-icon>
+              </button>
+            </mat-card-title>
+            <mat-card-content>
+              <p>{{ talk.speaker }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- TODO: Show for when there are no sessions yet -->
+    <!--
+      <div
+        flex
+        fxLayout="row"
+        fxLayout.xs="column"
+        fxLayoutGap="10px"
+        fxLayoutAlign="center"
+      >
+        <img class="rounded-circle" mat-card-image src="assets/devfest.png" />
+      </div>
+    -->
+    <!--
+      <a
+        mat-stroked-button
+        target="_blank"
+        href="https://goo.gl/forms/Uc4ZOhH8Sr6Jvubm2"
+      >
+        <h1>Call for speakers</h1>
+      </a>
+    -->
   </div>
 </div>

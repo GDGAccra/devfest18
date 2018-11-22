@@ -1,0 +1,96 @@
+[
+  {
+    "from": "10:30",
+    "to": "11:00",
+    "talks": [
+      {
+        "speaker": "Oliver Mensah",
+        "speakerNumber": "3",
+        "summary": "At the core of any Android application is hidden performance glitches\nthat  when not considered very much, will cause the user experience of mobile application to be poor. This talk will explore the means to overcome Android Performance barriers at the Development level.\nWe will learn together about the foundational knowledge of investigation and enhancements of performance threats in Android Development.",
+        "title": "Ditch \"Premature Optimization\" and Start thinking about performance during development"
+      }
+    ]
+  },
+  {
+    "from": "11:05",
+    "to": "12:15",
+    "talks": [
+      {
+        "speaker": "Mike Perry Yeboah Attara",
+        "speakerNumber": "4",
+        "summary": "Progressive Web Apps are experiences that combine the best of the web and the best of apps. As the user progressively builds a relationship with the app over time, it becomes more and more powerful.\nIn this demo, we will build a progressive web app that will be installable on the home screen and accessible offline after the first visit using the App Shell model.",
+        "title": "Building A Progressive Web App"
+      },
+      {
+        "speaker": "John Otu",
+        "speakerNumber": "5",
+        "summary": "“Serverless” and “Microservices” are among the buzzwords that confuse (if not startle) beginner or intermediate developers in the tech scene. But they are not supposed to be. They are merely fancy words that refer to modern ways in which developers are approaching software application development.  They have many advantages over traditional approaches and we will be demonstrating simple ways in which they can be implemented using Google Cloud Functions. ",
+        "title": "Leveraging Google Cloud Functions for Microservices"
+      },
+      {
+        "speaker": "Osei Yeboah Johnson",
+        "speakerNumber": "6",
+        "summary": "The talk/Demo is to demonstrate how easy it is to build a youtube like app, which uses Firebase tools; Cloud Firestore,Firebase Authentication,Analytics,Cloud functions and Storage. ",
+        "title": "Let's build YouTube using Firebase"
+      }
+    ]
+  },
+  {
+    "from": "12:30",
+    "to": "13:00",
+    "talks": [{ "title": "Lunch" }]
+  },
+  {
+    "from": "13:00",
+    "to": "13:10",
+    "talks": [{ "title": "Word from sponsors" }]
+  },
+  {
+    "from": "13:15",
+    "to": "13:40",
+    "talks": [
+      {
+        "speaker": "Alice Mensah",
+        "speakerNumber": "9",
+        "summary": "Learn how to use Google AdWords to increase leads and sales as a business. This includes how to write great text ads, targeting options, and understanding Google Auction",
+        "title": "How to increase sales with Google AdWords"
+      }
+    ]
+  },
+  {
+    "from": "13:45",
+    "to": "14:45",
+    "talks": [
+      {
+        "speaker": "Kwadwo Agyapong Ntara",
+        "speakerNumber": "10",
+        "summary": "Machine Learning is a hot topic for discussion these days, and rightly so: it has endless prospects, and is greatly accelerating the growth of the technology industry. I recently begun a journey into the world of machine learning, starting with the Stanford course on Coursera, moving on to implement the Firebase Machine Learning Kit in Android, and finally experimenting with Google's TensorFlow. This talk is a compression of my journey, and a guide for beginners to fast-track their progress in Machine Learning using TensorFlow.",
+        "title": "Up and Running with TensorFlow (A Beginner's Guide)"
+      },
+      {
+        "speaker": "Abubakar Sadik",
+        "speakerNumber": "11",
+        "summary": "Cloud providers abound, from Google Cloud, through to Alibaba cloud. With this proliferation comes an explosion in the amount of operational knowledge a modern System Administrator needs.\n\nKubernetes is an orchestrator that attempts to abstract the operation of cloud resources across multiple providers.\n\nHow good is kubernetes at it's job? Can we do better?",
+        "title": "The Joy that is Kubernetes"
+      },
+      {
+        "speaker": "Osborne Ofosu Saka",
+        "speakerNumber": "12",
+        "summary": "As developers, it is our dream to create apps, platforms or solutions that people need. The only way to achieve this goal is to go through the Build-Measure-Learn Cycle. Build an Minimum Viable Product (MVP) and test it in the real world with real customers and based on their feedbacks, you iterate to build a product the people really want. The talk is about using Firebase as tool to help in the testing of your MVP.",
+        "title": "Validating Minimum Viable Products (MVPs)  With Firebase"
+      }
+    ]
+  },
+  {
+    "from": "14:50",
+    "to ": "13:00",
+    "talks": [
+      {
+        "speaker": "Evans Augustt",
+        "speakerNumber": "13",
+        "summary": "Two years ago, i stumbled upon sonic pi (A live music programing platform). I'd like to entertain your audience with African beats/music generated from live ruby codes. It will take 5-15mins.",
+        "title": "Live coding African beats with Sonic pi"
+      }
+    ]
+  }
+]
