@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { TalkDialogComponent } from './talk-dialog/talk-dialog.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { FooterComponent } from './footer/footer.component';
     FlexLayoutModule,
     AppRoutingModule
   ],
-  declarations: [HeaderComponent, FooterComponent],
-  exports: [HeaderComponent, FooterComponent]
+  declarations: [HeaderComponent, FooterComponent, TalkDialogComponent],
+  exports: [HeaderComponent, FooterComponent, TalkDialogComponent],
+  entryComponents: [TalkDialogComponent]
 })
 export class SharedModule {}
